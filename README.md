@@ -33,7 +33,7 @@
 ```GET /api/v1/admin/books/overdue```
 
 ## User Endpoints:
-#### For all librarian endpoins use the header
+#### For all checkout endpoins use the header
 ```is_customer: true```
 #### Endpoint to check out a book; provide ISBN in the body of the request
 ```POST /api/v1/checkout```
