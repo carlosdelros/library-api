@@ -4,10 +4,10 @@
 
 ## Getting Started
 
-### 1. To start bring up the Databases:
+### 1. To start, bring up the database:
 ```docker-compose up -d```
 
-### 2. Add the provided .env file to you project
+### 2. Add the provided .env file to your project
 ### 3. Install dependencies
 ```npm instsall```
 ### 4. Run Migrations
@@ -23,7 +23,7 @@
 ```npm start```
 
 ## Librarian Endpoints:
-#### For all librarian endpoins use the header
+#### For all librarian endpoints use the header
 ```is_admin: true```
 #### Endpoint to add a book (by ISBN) to the library.
 ```POST /api/v1/admin/books```
@@ -33,7 +33,7 @@
 ```GET /api/v1/admin/books/overdue```
 
 ## User Endpoints:
-#### For all checkout endpoins use the header
+#### For all checkout endpoints use the header
 ```is_customer: true```
 #### Endpoint to check out a book; provide ISBN in the body of the request
 ```POST /api/v1/checkout```
