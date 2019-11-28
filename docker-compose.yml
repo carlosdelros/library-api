@@ -1,0 +1,20 @@
+version: '3.7'
+services:
+  library_db:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_USER: "${DB_USER}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+    ports:
+     - "${DB_PORT}:3306"
+  library_db_test:
+    image: mariadb:10.2
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD_TEST}"
+      MYSQL_DATABASE: "${DB_DATABASE_TEST}"
+      MYSQL_USER: "${DB_USER_TEST}"
+      MYSQL_PASSWORD: "${DB_PASSWORD_TEST}"
+    ports:
+     - "${DB_PORT_TEST}:3306"

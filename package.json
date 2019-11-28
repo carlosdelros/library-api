@@ -1,0 +1,36 @@
+{
+  "name": "library-api",
+  "version": "1.0.0",
+  "description": "API to manage a library's book inventory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "./node_modules/mocha/bin/_mocha --exit",
+    "migrations": "./node_modules/knex/bin/cli.js migrate:latest",
+    "seeds": "./node_modules/knex/bin/cli.js seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdelros/library-api.git"
+  },
+  "keywords": [],
+  "author": "Carlos Del Rosario",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.7",
+    "dotenv": "^8.2.0",
+    "knex": "^0.20.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.1"
+  }
+}
